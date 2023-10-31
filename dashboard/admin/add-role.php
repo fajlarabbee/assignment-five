@@ -105,12 +105,8 @@ getHeader('dashboard/common/header.php', $settings);
                                         <p class="text-xs font-weight-bold mb-0"><?= $key ?></p>
                                     </td>
 
-                                    <td>
-                                        <p class="text-xs font-weight-bold mb-0"><a href="#" class="edit-role" data-id="<?= $role ?>">Edit</a></p>
-                                    </td>
-
                                 </tr>
-                                <?
+                                <?php
                                 endforeach; ?>
                             </table>
                         </div>
