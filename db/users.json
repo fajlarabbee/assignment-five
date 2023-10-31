@@ -19,12 +19,5 @@
         "email": "user@gmail.com",
         "password": "Abc1234#",
         "role": "user"
-    },
-    "other@gmail.com": {
-        "id": "65411abc16423",
-        "username": "Other User",
-        "email": "other@gmail.com",
-        "password": "Abc1234#",
-        "role": "new-role"
     }
 }
