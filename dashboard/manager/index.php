@@ -13,7 +13,7 @@ if(! isset($_SESSION['role']) || $_SESSION['role'] !== 'manager') {
 inc('/includes/classes/DB.php');
 
 $settings    = [
-    'title' => 'User Dashboard',
+    'title' => 'Manager Dashboard',
 ];
 
 getHeader('dashboard/common/header.php', $settings);
