@@ -9,7 +9,7 @@ if ( ! isset($_SESSION['loggedin'])) {
 }
 
 if ( ! isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-    redirect('/login.php');
+    redirectToDashboard($_SESSION['role']);
 }
 inc('/includes/classes/DB.php');
 

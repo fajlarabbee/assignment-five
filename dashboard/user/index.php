@@ -8,7 +8,7 @@ if(! isset($_SESSION['loggedin'])) {
 }
 
 if(! isset($_SESSION['role']) || $_SESSION['role'] !== 'user') {
-    back();
+    redirectToDashboard($_SESSION['role']);
 }
 
 inc('/includes/classes/DB.php');
