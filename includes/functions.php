@@ -191,3 +191,11 @@ function urlIs($url): bool
 {
     return parse_url($_SERVER['REQUEST_URI'])['path'] === $url;
 }
+
+function back() {
+    if(isset($_SERVER['HTTP_REFERER'])) {
+        redirect($_SERVER['HTTP_REFERER']);
+    } else {
+        redirect('/');
+    }
+}

@@ -6,6 +6,11 @@ require_once dirname(__DIR__, 2) . '/includes/functions.php';
 if(! isset($_SESSION['loggedin'])) {
     redirect('/login.php');
 }
+
+if(! isset($_SESSION['role']) || $_SESSION['role'] !== 'user') {
+    back();
+}
+
 inc('/includes/classes/DB.php');
 
 $settings    = [
