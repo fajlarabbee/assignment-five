@@ -20,22 +20,11 @@
     document.addEventListener('DOMContentLoaded',function(){
         console.log('loaded');
         var links = document.querySelectorAll(".delete-user");
-        var rolesEdit = document.querySelectorAll('.edit-role');
-        var linksLen = links.length;
-        var rolesLength rolesEdit.length;
-        for(let i=0;i<linksLen;i++){
+        for(let i=0;i<links.length;i++){
             links[i].addEventListener('click',function(e){
                 if(!confirm("Are you sure?")){
                     e.preventDefault();
                 }
-            });
-        }
-
-        for(let i = 0; i < rolesLength; i++) {
-            rolesEdit[i].addEventListener('click', function(e){
-                var id = this.getDataAttribute('data-id');
-                console.log(id);
-                e.preventDefault();
             });
         }
     });
