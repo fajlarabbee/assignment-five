@@ -9,8 +9,10 @@ if(! isset($_SESSION['loggedin'])) {
 inc('/includes/classes/DB.php');
 
 $settings    = [
-    'title' => 'User Dashboard',
+    'title' => 'Other User Dashboard',
 ];
+
+
 getHeader('dashboard/common/header.php', $settings);
 ?>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
@@ -23,14 +25,14 @@ getHeader('dashboard/common/header.php', $settings);
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-6 col-7">
-                                    <h6>User Dashboard</h6>
+                                    <h6>Other User Dashboard</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body px-0 pb-2">
                             <div class="row">
                                 <div class="col-12 text-center">
-                                    <p>User Dashboard Content Goes Here!</p>
+                                    <p>Other User Dashboard Content Goes Here!</p>
                                 </div>
                             </div>
 
@@ -43,5 +45,5 @@ getHeader('dashboard/common/header.php', $settings);
         </div>
     </main>
 <?php
-getTemplate('dashboard/common/fixed-plugin.php');
+getTemplate('dashboard/common/fixed-plugin.php', ['userName' => 'John Doe']);
 getFooter('dashboard/common/footer.php');

@@ -170,10 +170,13 @@ function redirectToDashboard($role): void
             redirect('/dashboard/admin/');
             break;
         case 'manager':
-            redirect('/dashboard/manager');
+            redirect('/dashboard/manager/');
+            break;
+        case 'user':
+            redirect('/dashboard/user/');
             break;
         default:
-            redirect('/dashboard/user');
+            redirect('/dashboard/others');
             break;
     }
 }

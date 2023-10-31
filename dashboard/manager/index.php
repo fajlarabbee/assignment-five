@@ -11,18 +11,6 @@ inc('/includes/classes/DB.php');
 $settings    = [
     'title' => 'User Dashboard',
 ];
-$tableHeader = [
-    'Name',
-    'Email',
-    'Role',
-    'Actions',
-];
-
-$usersDb = new DB('users.json');
-$users   = $usersDb->read()->getData(true);
-
-$rolesDb = new DB('roles.json');
-$roles = $rolesDb->read()->getData(true);
 
 getHeader('dashboard/common/header.php', $settings);
 ?>
