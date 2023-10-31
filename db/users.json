@@ -1,0 +1,23 @@
+{
+    "admin@gmail.com": {
+        "id": "6540b7db3dbb3",
+        "username": "Admin User",
+        "email": "admin@gmail.com",
+        "password": "Abc1234#",
+        "role": "admin"
+    },
+    "manager@gmail.com": {
+        "id": "65411a27517aa",
+        "username": "Manager",
+        "email": "manager@gmail.com",
+        "password": "Abc1234#",
+        "role": "manager"
+    },
+    "user@user.com": {
+        "id": "65411abc16422",
+        "username": "User",
+        "email": "user@user.com",
+        "password": "Abc1234#",
+        "role": "user"
+    }
+}
