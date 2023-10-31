@@ -181,7 +181,7 @@ function redirectToDashboard($role): void
     }
 }
 
-function redirect($location)
+function redirect($location): void
 {
     header("Location: {$location}");
 }
@@ -192,8 +192,9 @@ function urlIs($url): bool
     return parse_url($_SERVER['REQUEST_URI'])['path'] === $url;
 }
 
-function back() {
-    if(isset($_SERVER['HTTP_REFERER'])) {
+function back(): void
+{
+    if (isset($_SERVER['HTTP_REFERER'])) {
         redirect($_SERVER['HTTP_REFERER']);
     } else {
         redirect('/');
