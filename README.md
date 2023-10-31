@@ -2,7 +2,7 @@
 
 This repository contains the module five assignment solution.
 
-### Task: Please create a PHP script that implements user authentication and role management for Our Crew Project.
+### Task: User Authentication and Role Management System
 
 - This project uses .json file for the storage of the users and other information.
 - It uses Session to store the login details.
